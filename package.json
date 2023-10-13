@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3000",
+  "homepage": ".",
   "dependencies": {
     "@clerk/clerk-react": "^4.26.3",
     "@testing-library/jest-dom": "^5.17.0",
