@@ -2,7 +2,7 @@
   "name": "lambda-communication",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3000/api",
+  "proxy": "http://localhost:3000",
   "homepage": ".",
   "dependencies": {
     "@clerk/clerk-react": "^4.26.3",
