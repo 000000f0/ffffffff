@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chat Container Styles */
+.terminal-window {
+  max-height: 400px;
+  overflow: auto;
+}
+
+/* Terminal Container Styles */
+.terminal {
+  max-height: 400px;
+
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Adjust width to fill the container */
+  margin: 0 auto;
+  border: 1px solid white;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Message Container Styles */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Message Styles */
+.message {
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* User Message Styles */
+.user {
+  background-color: black;
+  color: white;
+  align-self: flex-end;
+}
+
+/* Bot Message Styles */
+.bot {
+  background-color: black;
+  color: white;
+  align-self: flex-start;
+}
+
+/* Chat Input Styles */
+.chat-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Terminal Header Styles */
+.terminal-header {
+  text-align: center; /* Center the text horizontally */
+  padding: 10px 0; /* Add some padding for better spacing */
+  font-size: 14px; /* Adjust the font size as needed */
+  background-color: black; /* Set the background color for the header */
+  color: white; /* Set the text color for the header */
+  margin-top: -10px;
+}
+.loading-pacman {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+  position: relative;
+  margin-top: 20px;
+  animation: eat 0.7s infinite;
+}
+
+.loading-dot {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: move-dot 0.7s infinite;
+}
+
+@keyframes eat {
+  0%, 100% {
+    clip-path: polygon(100% 74%, 50% 50%, 100% 26%);
+  }
+  50% {
+    clip-path: polygon(100% 50%, 50% 50%, 100% 50%);
+  }
+}
+
+@keyframes move-dot {
+  0%, 100% {
+    transform: translateX(10px);
+  }
+  66.67% {
+    transform: translateX(-30px);
+  }
+}
+
+
+
